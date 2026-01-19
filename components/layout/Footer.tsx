@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import FooterAnimations from "./FooterAnimations";
+import FooterAnimations from "../animations/FooterAnimations";
 
 export default function Footer() {
   return (
