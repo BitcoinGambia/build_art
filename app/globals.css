@@ -1913,7 +1913,7 @@ h6 {
 }
 
 .about-technical__capabilities li::before {
-  content: "\\2192";
+  content: "\2192";
   position: absolute;
   left: 0;
   color: var(--color-gold);

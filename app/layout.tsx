@@ -3,7 +3,7 @@ import type { ReactNode } from "react";
 import "./globals.css";
 import Footer from "components/layout/Footer";
 import Header from "components/layout/Header";
-import SmoothScroll from "components/layout/SmoothScroll";
+import SmoothScroll from "components/animations/SmoothScroll";
 
 export const metadata: Metadata = {
   title: {
