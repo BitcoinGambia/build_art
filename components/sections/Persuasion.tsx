@@ -1,0 +1,82 @@
+import Image from "next/image";
+import Link from "next/link";
+
+export default function Persuasion() {
+  return (
+    <section className="persuasion">
+      <div className="container">
+        <div className="persuasion__header">
+          <h2 className="persuasion__headline">Real Experience. Real Results.</h2>
+          <p className="persuasion__text">
+            For more than three decades, BuildArt Global has delivered design
+            and build solutions rooted in craftsmanship, innovation, and client
+            satisfaction across settings from corporate environments to bespoke
+            exhibitions and refined interiors.
+          </p>
+        </div>
+
+        <div className="persuasion__grid">
+          <div className="persuasion__image persuasion__image--hero">
+            <Image
+              src="/assets/images/image-38.jpg"
+              alt="BuildArt Global Project"
+              fill
+              sizes="100vw"
+            />
+          </div>
+
+          <div className="persuasion__image">
+            <Image
+              src="/assets/images/image-34.jpg"
+              alt="BuildArt Global Project"
+              fill
+              sizes="100vw"
+            />
+          </div>
+
+          <div className="persuasion__image">
+            <Image
+              src="/assets/images/image-21.jpg"
+              alt="BuildArt Global Project"
+              fill
+              sizes="100vw"
+            />
+          </div>
+
+          <div className="persuasion__image">
+            <Image
+              src="/assets/images/image-16.jpg"
+              alt="BuildArt Global Project"
+              fill
+              sizes="100vw"
+            />
+          </div>
+
+          <div className="persuasion__image">
+            <Image
+              src="/assets/images/image-27.jpg"
+              alt="BuildArt Global Project"
+              fill
+              sizes="100vw"
+            />
+          </div>
+        </div>
+
+        <div className="persuasion__bullets">
+          <ul>
+            <li>End-to-end project management</li>
+            <li>Dedicated design and production team</li>
+            <li>Deep local UAE expertise</li>
+            <li>Reliable delivery &amp; communication</li>
+          </ul>
+        </div>
+
+        <div className="persuasion__cta-wrapper">
+          <Link href="/about" className="persuasion__cta">
+            Learn More About Us →
+          </Link>
+        </div>
+      </div>
+    </section>
+  );
+}
