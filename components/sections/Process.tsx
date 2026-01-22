@@ -19,9 +19,10 @@ type ProcessCta = {
 type ProcessProps = {
   headline?: string;
   steps?: ProcessStep[];
-  cta?: ProcessCta;
+  cta?: ProcessCta | null;
   baseClassName?: string;
   dark?: boolean;
+  elementSeparator?: string;
 };
 
 const defaultSteps: ProcessStep[] = [
@@ -70,21 +71,23 @@ export default function Process({
   cta = defaultCta,
   baseClassName = "process",
   dark = false,
+  elementSeparator = "__",
 }: ProcessProps) {
   const sectionClassName = dark
     ? `${baseClassName} ${baseClassName}--dark`
     : baseClassName;
+  const elementPrefix = `${baseClassName}${elementSeparator}`;
 
   return (
     <section className={sectionClassName}>
-      <h2 className={`${baseClassName}__headline`}>{headline}</h2>
+      <h2 className={`${elementPrefix}headline`}>{headline}</h2>
 
-      <div className={`${baseClassName}__cards`}>
+      <div className={`${elementPrefix}cards`}>
         {steps.map((step, index) => {
           const stepNumber =
             step.number ?? String(index + 1).padStart(2, "0");
           const image = (
-            <div className={`${baseClassName}__image`}>
+            <div className={`${elementPrefix}image`}>
               <Image
                 src={step.image.src}
                 alt={step.image.alt}
@@ -94,12 +97,12 @@ export default function Process({
             </div>
           );
           const stepContent = (
-            <div className={`${baseClassName}__step`}>
-              <div className={`${baseClassName}__step-number`}>
+            <div className={`${elementPrefix}step`}>
+              <div className={`${elementPrefix}step-number`}>
                 {stepNumber}
               </div>
-              <h3 className={`${baseClassName}__step-title`}>{step.title}</h3>
-              <p className={`${baseClassName}__step-description`}>
+              <h3 className={`${elementPrefix}step-title`}>{step.title}</h3>
+              <p className={`${elementPrefix}step-description`}>
                 {step.description}
               </p>
             </div>
@@ -108,7 +111,7 @@ export default function Process({
           return (
             <div
               key={`${baseClassName}-${index}`}
-              className={`${baseClassName}__item ${baseClassName}__item--${
+              className={`${elementPrefix}item ${elementPrefix}item--${
                 index + 1
               }`}
             >
@@ -129,7 +132,7 @@ export default function Process({
       </div>
 
       {cta ? (
-        <Link href={cta.href} className={`${baseClassName}__cta`}>
+        <Link href={cta.href} className={`${elementPrefix}cta`}>
           {cta.label}
         </Link>
       ) : null}
