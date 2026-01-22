@@ -142,8 +142,9 @@ const homeInteriorsContent: ServicePageContentProps = {
     ? {
         ...exhibitionsContent.finalCta,
         image: {
-          ...exhibitionsContent.finalCta.image,
           src: "/assets/images/image-13.jpg",
+          alt:
+            exhibitionsContent.finalCta.image?.alt ?? "BuildArt Global Project",
         },
       }
     : undefined,

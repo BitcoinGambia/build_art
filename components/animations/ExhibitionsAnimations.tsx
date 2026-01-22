@@ -79,8 +79,10 @@ export default function ExhibitionsAnimations() {
 
       const typesSection = document.querySelector(".exhibition__types");
       const typesHeadline = document.querySelector(".exhibition__types-headline");
-      const typesStage = document.querySelector(".exhibition__types-stage");
-      const typesWrapper = document.querySelector(".exhibition__types-wrapper");
+      const typesStage =
+        document.querySelector<HTMLElement>(".exhibition__types-stage");
+      const typesWrapper =
+        document.querySelector<HTMLElement>(".exhibition__types-wrapper");
       const typeCards = gsap.utils.toArray<HTMLElement>(
         ".exhibition__type-card"
       );
