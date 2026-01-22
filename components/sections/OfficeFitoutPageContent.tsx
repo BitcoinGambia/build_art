@@ -142,8 +142,9 @@ const officeFitoutContent: ServicePageContentProps = {
     ? {
         ...exhibitionsContent.finalCta,
         image: {
-          ...exhibitionsContent.finalCta.image,
           src: "/assets/images/image-34.jpg",
+          alt:
+            exhibitionsContent.finalCta.image?.alt ?? "BuildArt Global Project",
         },
       }
     : undefined,
