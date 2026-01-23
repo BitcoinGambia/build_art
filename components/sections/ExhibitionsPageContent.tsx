@@ -125,7 +125,7 @@ export const exhibitionsContent: ServicePageContentProps = {
         description:
           "Bespoke designs aligned with your brand, audience, and objectives - engineered for buildability and compliance.",
         image: {
-          src: "/assets/images/image1.png",
+          src: "/assets/images/image4.png",
           alt: "Custom Exhibition Stands",
         },
       },
@@ -155,7 +155,7 @@ export const exhibitionsContent: ServicePageContentProps = {
         description:
           "Flexible solutions balancing efficiency, reusability, and strong visual identity.",
         image: {
-          src: "/assets/images/image7.png",
+          src: "/assets/images/image5.png",
           alt: "Modular & Hybrid Stands",
         },
       },
@@ -297,7 +297,7 @@ export const exhibitionsContent: ServicePageContentProps = {
     closingText:
       "Our focus is reliability - executing what we commit to, without excuses or surprises.",
     image: {
-      src: "/assets/images/image31.png",
+      src: "/assets/images/image21.png",
       alt: "Exhibition Experience",
     },
     caption: "Decades of hands-on experience in UAE's leading exhibition venues.",
@@ -331,7 +331,7 @@ export const exhibitionsContent: ServicePageContentProps = {
         },
         {
           image: {
-            src: "/assets/images/image30.png",
+            src: "/assets/images/image29.png",
             alt: "Dubai Airshow Exhibition Stand",
           },
           meta: "Dubai Airshow · 180 sqm · Aviation",
@@ -373,7 +373,7 @@ export const exhibitionsContent: ServicePageContentProps = {
       },
     ],
     image: {
-      src: "/assets/images/image12.png",
+      src: "/assets/images/image11.png",
       alt: "Exhibition Stand Design",
     },
   },

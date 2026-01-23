@@ -160,6 +160,10 @@ h6 {
   background-color: var(--color-white);
 }
 
+html[data-nav-theme="light"] .header__menu-toggle span {
+  background-color: var(--color-navy);
+}
+
 .header.header--scrolled .header__menu-toggle span {
   background-color: var(--color-navy);
 }
@@ -189,6 +193,10 @@ h6 {
   color: var(--color-white);
   transition: color 0.3s ease;
   font-size: clamp(0.875rem, 2vw, 1.2rem);
+}
+
+html[data-nav-theme="light"] .header__nav a {
+  color: var(--color-navy);
 }
 
 .header.header--scrolled .header__nav a {
@@ -375,6 +383,10 @@ h6 {
 
   .header__nav a {
     font-size: 1.1rem;
+    color: var(--color-white);
+  }
+
+  html[data-nav-theme="light"] .header__nav a {
     color: var(--color-white);
   }
 

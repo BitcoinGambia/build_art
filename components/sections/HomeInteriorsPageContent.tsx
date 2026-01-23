@@ -136,7 +136,7 @@ const homeInteriorsContent: ServicePageContentProps = {
       "Spaces feel warm, balanced, and easy to live in",
     ],
     image: {
-      src: "/assets/images/image35.png",
+      src: "/assets/images/image34.png",
       alt: "Residential Lighting & Electrical",
     },
     closingText:
