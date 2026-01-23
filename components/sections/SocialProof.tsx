@@ -14,7 +14,7 @@ export default function SocialProof() {
 
           <div className="social-proof__image social-proof__image--large">
             <Image
-              src="/assets/images/image-19.jpg"
+              src="/assets/images/image19.webp"
               alt="Exhibition Stand Project"
               fill
               sizes="100vw"
@@ -23,7 +23,7 @@ export default function SocialProof() {
 
           <div className="social-proof__image social-proof__image--small">
             <Image
-              src="/assets/images/image-16.jpg"
+              src="/assets/images/image16.jpg"
               alt="Office Fit-Out Project"
               fill
               sizes="100vw"
@@ -39,7 +39,7 @@ export default function SocialProof() {
 
           <div className="social-proof__image social-proof__image--small">
             <Image
-              src="/assets/images/image-27.jpg"
+              src="/assets/images/image27.png"
               alt="Residential Interior"
               fill
               sizes="100vw"
@@ -48,7 +48,7 @@ export default function SocialProof() {
 
           <div className="social-proof__image social-proof__image--small">
             <Image
-              src="/assets/images/image-21.jpg"
+              src="/assets/images/image21.png"
               alt="Commercial Space"
               fill
               sizes="100vw"
@@ -57,7 +57,7 @@ export default function SocialProof() {
 
           <div className="social-proof__image social-proof__image--small">
             <Image
-              src="/assets/images/image-28.jpg"
+              src="/assets/images/image28.png"
               alt="Event Space"
               fill
               sizes="100vw"
@@ -73,7 +73,7 @@ export default function SocialProof() {
 
           <div className="social-proof__image social-proof__image--large">
             <Image
-              src="/assets/images/image-23.jpg"
+              src="/assets/images/image23.avif"
               alt="Exhibition Environment"
               fill
               sizes="100vw"

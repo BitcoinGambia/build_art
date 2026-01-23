@@ -4,23 +4,23 @@ import ServicePageContent, {
 import { exhibitionsContent } from "components/sections/ExhibitionsPageContent";
 
 const homeTypeImages = [
-  "/assets/images/image-40.jpg",
-  "/assets/images/image-41.jpg",
-  "/assets/images/image-42.jpg",
-  "/assets/images/image-48.jpg",
+  "/assets/images/image33.png",
+  "/assets/images/image34.png",
+  "/assets/images/image35.png",
+  "/assets/images/image34.png",
 ];
 
 const homeProcessImages = [
-  "/assets/images/image-1.jpg",
-  "/assets/images/image-2.jpg",
-  "/assets/images/image-3.jpg",
-  "/assets/images/image-4.jpg",
-  "/assets/images/image-5.jpg",
+  "/assets/images/image1.png",
+  "/assets/images/image2.png",
+  "/assets/images/image3.png",
+  "/assets/images/image4.png",
+  "/assets/images/image5.png",
 ];
 
 const homePortfolioImages = [
-  ["/assets/images/image-8.jpg", "/assets/images/image-9.jpg"],
-  ["/assets/images/image-10.jpg", "/assets/images/image-11.jpg"],
+  ["/assets/images/image8.png", "/assets/images/image9.png"],
+  ["/assets/images/image10.png", "/assets/images/image11.png"],
 ];
 
 const homeInteriorsContent: ServicePageContentProps = {
@@ -29,7 +29,7 @@ const homeInteriorsContent: ServicePageContentProps = {
     ...exhibitionsContent.hero,
     image: {
       ...exhibitionsContent.hero.image,
-      src: "/assets/images/image-35.jpg",
+      src: "/assets/images/image35.png",
     },
   },
   serviceIntro: exhibitionsContent.serviceIntro
@@ -37,7 +37,7 @@ const homeInteriorsContent: ServicePageContentProps = {
         ...exhibitionsContent.serviceIntro,
         image: {
           ...exhibitionsContent.serviceIntro.image,
-          src: "/assets/images/image-36.jpg",
+          src: "/assets/images/image36.avif",
         },
       }
     : undefined,
@@ -46,7 +46,7 @@ const homeInteriorsContent: ServicePageContentProps = {
         ...exhibitionsContent.who,
         image: {
           ...exhibitionsContent.who.image,
-          src: "/assets/images/image-37.jpg",
+          src: "/assets/images/image30.png",
         },
       }
     : undefined,
@@ -55,32 +55,21 @@ const homeInteriorsContent: ServicePageContentProps = {
         ...exhibitionsContent.scope,
         image: {
           ...exhibitionsContent.scope.image,
-          src: "/assets/images/image-38.jpg",
+          src: "/assets/images/image31.png",
         },
         contentImage: {
           ...exhibitionsContent.scope.contentImage,
-          src: "/assets/images/image-39.jpg",
+          src: "/assets/images/image32.png",
         },
       }
     : undefined,
-  types: exhibitionsContent.types
-    ? {
-        ...exhibitionsContent.types,
-        cards: exhibitionsContent.types.cards.map((card, index) => ({
-          ...card,
-          image: {
-            ...card.image,
-            src: homeTypeImages[index] ?? card.image.src,
-          },
-        })),
-      }
-    : undefined,
+  types: undefined,
   technical: exhibitionsContent.technical
     ? {
         ...exhibitionsContent.technical,
         image: {
           ...exhibitionsContent.technical.image,
-          src: "/assets/images/image-49.jpg",
+          src: "/assets/images/image35.png",
         },
       }
     : undefined,
@@ -101,7 +90,7 @@ const homeInteriorsContent: ServicePageContentProps = {
         ...exhibitionsContent.why,
         image: {
           ...exhibitionsContent.why.image,
-          src: "/assets/images/image-6.jpg",
+          src: "/assets/images/image6.png",
         },
       }
     : undefined,
@@ -110,7 +99,7 @@ const homeInteriorsContent: ServicePageContentProps = {
         ...exhibitionsContent.experience,
         image: {
           ...exhibitionsContent.experience.image,
-          src: "/assets/images/image-7.jpg",
+          src: "/assets/images/image7.png",
         },
       }
     : undefined,
@@ -134,7 +123,7 @@ const homeInteriorsContent: ServicePageContentProps = {
         ...exhibitionsContent.faq,
         image: {
           ...exhibitionsContent.faq.image,
-          src: "/assets/images/image-12.jpg",
+          src: "/assets/images/image12.png",
         },
       }
     : undefined,
@@ -142,7 +131,7 @@ const homeInteriorsContent: ServicePageContentProps = {
     ? {
         ...exhibitionsContent.finalCta,
         image: {
-          src: "/assets/images/image-13.jpg",
+          src: "/assets/images/image13.png",
           alt:
             exhibitionsContent.finalCta.image?.alt ?? "BuildArt Global Project",
         },

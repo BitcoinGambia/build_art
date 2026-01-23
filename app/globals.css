@@ -984,6 +984,7 @@ h6 {
   padding-top: clamp(2rem, 5vw, 10rem);
   transition: background-color 0.6s ease;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: var(--color-cream);
 }
 
 .process.process--dark {
@@ -1024,7 +1025,7 @@ h6 {
   align-items: center;
   gap: var(--grid-gap);
   padding: clamp(2rem, 4vh, 3rem) 2rem;
-  background-color: var(--color-light-gray);
+  background-color: var(--color-cream);
   grid-template-columns: repeat(var(--grid-columns), 1fr);
 }
 
@@ -1642,6 +1643,7 @@ h6 {
 .about-hero__image {
   grid-row: 2;
   height: 100vh;
+  position: relative;
   overflow: hidden;
   grid-column: 1 / 13;
 }
@@ -1702,6 +1704,7 @@ h6 {
 .about-story__image {
   grid-row: 2;
   height: 100vh;
+  position: relative;
   overflow: hidden;
   grid-column: 1 / 8;
 }
@@ -1783,6 +1786,7 @@ h6 {
 .about-defines__image {
   grid-row: 2;
   height: 100vh;
+  position: relative;
   overflow: hidden;
   grid-column: 1 / 13;
 }
@@ -1942,6 +1946,7 @@ h6 {
 .about-technical__image {
   height: 100vh;
   margin-left: 5%;
+  position: relative;
   overflow: hidden;
 }
 
@@ -2220,6 +2225,7 @@ h6 {
 .about-trust__image {
   grid-row: 2;
   height: 100vh;
+  position: relative;
   overflow: hidden;
   grid-column: 6 / 13;
 }
@@ -2371,6 +2377,7 @@ h6 {
 
 .about-philosophy__image {
   height: 100vh;
+  position: relative;
   overflow: hidden;
   grid-column: 1 / 13;
 }
@@ -3089,6 +3096,7 @@ h6 {
   padding-top: clamp(2rem, 5vw, 10rem);
   transition: background-color 0.6s ease;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: var(--color-cream);
 }
 
 .exhibition__process.exhibition__process--dark {
@@ -3125,7 +3133,7 @@ h6 {
   align-items: center;
   gap: var(--grid-gap);
   padding: clamp(2rem, 4vh, 3rem) 2rem;
-  background-color: var(--color-light-gray);
+  background-color: var(--color-cream);
   grid-template-columns: repeat(var(--grid-columns), 1fr);
 }
 
@@ -3542,11 +3550,13 @@ h6 {
 .exhibition__portfolio-item {
   overflow: hidden;
   position: relative;
+  width: 100%;
+  height: 100vh;
 }
 
 .exhibition__portfolio-item img {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   display: block;
   object-fit: cover;
   transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
@@ -3650,13 +3660,21 @@ h6 {
     padding-left: var(--container-padding);
   }
 
-  .exhibition__portfolio-item img {
+  .exhibition__portfolio-item {
     height: 60vh;
   }
 
   .exhibition__portfolio-meta {
     opacity: 1;
   }
+}
+
+.header__nav.active a {
+  color: var(--color-white);
+}
+
+.header.header--scrolled .header__nav.active a {
+  color: var(--color-white);
 }
 
 .exhibition__faq {

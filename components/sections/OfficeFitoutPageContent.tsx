@@ -4,23 +4,23 @@ import ServicePageContent, {
 import { exhibitionsContent } from "components/sections/ExhibitionsPageContent";
 
 const officeTypeImages = [
-  "/assets/images/image-16.jpg",
-  "/assets/images/image-17.jpg",
-  "/assets/images/image-18.jpg",
-  "/assets/images/image-19.jpg",
+  "/assets/images/image16.jpg",
+  "/assets/images/image17.jpeg",
+  "/assets/images/image18.jpeg",
+  "/assets/images/image19.webp",
 ];
 
 const officeProcessImages = [
-  "/assets/images/image-21.jpg",
-  "/assets/images/image-22.jpg",
-  "/assets/images/image-23.jpg",
-  "/assets/images/image-24.jpg",
-  "/assets/images/image-26.jpg",
+  "/assets/images/image21.png",
+  "/assets/images/image22.png",
+  "/assets/images/image23.avif",
+  "/assets/images/image24.avif",
+  "/assets/images/image26.png",
 ];
 
 const officePortfolioImages = [
-  ["/assets/images/image-29.jpg", "/assets/images/image-30.jpg"],
-  ["/assets/images/image-31.jpg", "/assets/images/image-32.jpg"],
+  ["/assets/images/image29.png", "/assets/images/image30.png"],
+  ["/assets/images/image31.png", "/assets/images/image32.png"],
 ];
 
 const officeFitoutContent: ServicePageContentProps = {
@@ -55,32 +55,21 @@ const officeFitoutContent: ServicePageContentProps = {
         ...exhibitionsContent.scope,
         image: {
           ...exhibitionsContent.scope.image,
-          src: "/assets/images/image-14.jpg",
+          src: "/assets/images/image13.png",
         },
         contentImage: {
           ...exhibitionsContent.scope.contentImage,
-          src: "/assets/images/image-15.jpg",
+          src: "/assets/images/image15.jpg",
         },
       }
     : undefined,
-  types: exhibitionsContent.types
-    ? {
-        ...exhibitionsContent.types,
-        cards: exhibitionsContent.types.cards.map((card, index) => ({
-          ...card,
-          image: {
-            ...card.image,
-            src: officeTypeImages[index] ?? card.image.src,
-          },
-        })),
-      }
-    : undefined,
+  types: undefined,
   technical: exhibitionsContent.technical
     ? {
         ...exhibitionsContent.technical,
         image: {
           ...exhibitionsContent.technical.image,
-          src: "/assets/images/image-20.jpg",
+          src: "/assets/images/image20.webp",
         },
       }
     : undefined,
@@ -101,7 +90,7 @@ const officeFitoutContent: ServicePageContentProps = {
         ...exhibitionsContent.why,
         image: {
           ...exhibitionsContent.why.image,
-          src: "/assets/images/image-27.jpg",
+          src: "/assets/images/image27.png",
         },
       }
     : undefined,
@@ -110,7 +99,7 @@ const officeFitoutContent: ServicePageContentProps = {
         ...exhibitionsContent.experience,
         image: {
           ...exhibitionsContent.experience.image,
-          src: "/assets/images/image-28.jpg",
+          src: "/assets/images/image28.png",
         },
       }
     : undefined,
@@ -134,7 +123,7 @@ const officeFitoutContent: ServicePageContentProps = {
         ...exhibitionsContent.faq,
         image: {
           ...exhibitionsContent.faq.image,
-          src: "/assets/images/image-33.jpg",
+          src: "/assets/images/image33.png",
         },
       }
     : undefined,
@@ -142,7 +131,7 @@ const officeFitoutContent: ServicePageContentProps = {
     ? {
         ...exhibitionsContent.finalCta,
         image: {
-          src: "/assets/images/image-34.jpg",
+          src: "/assets/images/image34.png",
           alt:
             exhibitionsContent.finalCta.image?.alt ?? "BuildArt Global Project",
         },

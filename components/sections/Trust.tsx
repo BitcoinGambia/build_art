@@ -26,7 +26,7 @@ export default function Trust() {
 
           <div className="trust__image">
             <Image
-              src="/assets/images/image-34.jpg"
+              src="/assets/images/image34.png"
               alt="BuildArt Global Project"
               fill
               sizes="100vw"
@@ -35,7 +35,7 @@ export default function Trust() {
 
           <div className="trust__image">
             <Image
-              src="/assets/images/image-21.jpg"
+              src="/assets/images/image21.png"
               alt="BuildArt Global Project"
               fill
               sizes="100vw"
