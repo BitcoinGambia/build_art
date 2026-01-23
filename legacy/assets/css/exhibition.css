@@ -1344,7 +1344,11 @@
   width: 22px;
   height: 22px;
   opacity: 0.9;
-  transform-origin: 50% 50%;
+  transition: transform 0.3s ease;
+}
+
+.exhibition__faq-item[open] .exhibition__faq-icon {
+  transform: rotate(45deg);
 }
 
 .exhibition__faq-answer {

@@ -1,12 +1,15 @@
 "use client";
 
+import { usePathname } from "next/navigation";
 import { useEffect } from "react";
 
 export default function HeaderBehavior() {
+  const pathName = usePathname();
+
   useEffect(() => {
     const header = document.querySelector<HTMLElement>(".header");
     const menuToggle = document.querySelector<HTMLButtonElement>(
-      ".header__menu-toggle"
+      ".header__menu-toggle",
     );
     const nav = document.querySelector<HTMLElement>(".header__nav");
 
@@ -14,8 +17,24 @@ export default function HeaderBehavior() {
       return;
     }
 
+    const isLightPage = pathName !== "/";
+    if (isLightPage) {
+      header.classList.add("header--light");
+    } else {
+      header.classList.remove("header--light");
+    }
+
     const body = document.body;
     const navLinks = Array.from(nav.querySelectorAll<HTMLAnchorElement>("a"));
+
+    navLinks.forEach((link) => {
+      const href = link.getAttribute("href");
+      if (href && pathName.startsWith(href) && href !== "/") {
+        link.classList.add("active");
+      } else {
+        link.classList.remove("active");
+      }
+    });
 
     const handleToggle = () => {
       menuToggle.classList.toggle("active");
@@ -84,7 +103,7 @@ export default function HeaderBehavior() {
       window.removeEventListener("scroll", handleScroll);
       body.style.overflow = "";
     };
-  }, []);
+  }, [pathName]);
 
   return null;
 }

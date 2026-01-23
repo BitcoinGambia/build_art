@@ -1,5 +1,5 @@
-import Image from "next/image";
 import Link from "next/link";
+import Image from "next/image";
 import HeaderBehavior from "../animations/HeaderBehavior";
 
 export default function Header() {
