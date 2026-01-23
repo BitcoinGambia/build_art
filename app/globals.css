@@ -11,7 +11,7 @@
   --color-light-gray: #f5f5f5;
   --color-light-gray-2: #f1f0f0;
 
-  --font-body: "Boska", serif;
+  --font-body: "Cabinet Grotesk", sans-serif;
   --font-family: "Manrope", sans-serif;
   --font-primary:
     -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -24,6 +24,7 @@
 * {
   margin: 0;
   padding: 0;
+  list-style: none;
   box-sizing: border-box;
 }
 
@@ -1594,6 +1595,9 @@ h6 {
   }
 }
 
+/**-------------------
+ * ABOUT PAGE STYLES
+ -------------------*/
 .about-hero {
   background-color: var(--color-cream);
   padding: 7rem 0 clamp(12rem, 20vh, 16rem) 0;
@@ -1628,7 +1632,7 @@ h6 {
 }
 
 .about-hero__intro p {
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.6;
   letter-spacing: -0.01em;
   color: var(--color-navy);
@@ -1637,23 +1641,22 @@ h6 {
 
 .about-hero__image {
   grid-row: 2;
-  grid-column: 1 / 13;
   height: 100vh;
   overflow: hidden;
-  position: relative;
+  grid-column: 1 / 13;
 }
 
 .about-hero__image img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: 100vh;
   display: block;
+  object-fit: cover;
 }
 
 @media (max-width: 768px) {
   .about-hero__grid {
-    grid-template-rows: auto auto 100vh;
     row-gap: clamp(3rem, 6vh, 5rem);
+    grid-template-rows: auto auto 100vh;
   }
 
   .about-hero__title {
@@ -1673,8 +1676,8 @@ h6 {
 }
 
 .about-story {
-  padding: clamp(10rem, 20vh, 15rem) 0;
   background-color: var(--color-cream);
+  padding: 5rem 0 clamp(10rem, 25vh, 25rem);
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
@@ -1698,10 +1701,9 @@ h6 {
 
 .about-story__image {
   grid-row: 2;
-  grid-column: 1 / 8;
   height: 100vh;
   overflow: hidden;
-  position: relative;
+  grid-column: 1 / 8;
 }
 
 .about-story__image img {
@@ -1713,20 +1715,20 @@ h6 {
 
 .about-story__text {
   grid-row: 2;
-  grid-column: 8 / 13;
   display: flex;
   align-self: center;
+  grid-column: 8 / 13;
   flex-direction: column;
   gap: clamp(1.5rem, 3vh, 2rem);
   padding-left: clamp(2rem, 4vw, 3rem);
 }
 
 .about-story__text p {
-  font-size: clamp(1.1rem, 1.8vw, 1.6rem);
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.6;
   letter-spacing: -0.01em;
   color: var(--color-navy);
+  font-size: clamp(1.1rem, 1.8vw, 1.6rem);
 }
 
 @media (max-width: 768px) {
@@ -1749,63 +1751,65 @@ h6 {
 
   .about-story__text {
     grid-row: 3;
-    grid-column: 1 / 13;
     padding-left: 0;
+    grid-column: 1 / 13;
   }
 }
 
 .about-defines {
   padding: clamp(10rem, 20vh, 15rem) 0;
   background-color: var(--color-cream);
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .about-defines__grid {
   display: grid;
   gap: var(--grid-gap);
   row-gap: clamp(6rem, 12vh, 10rem);
-  grid-template-columns: repeat(var(--grid-columns), 1fr);
   grid-template-rows: auto 100vh auto;
+  grid-template-columns: repeat(var(--grid-columns), 1fr);
 }
 
 .about-defines__headline {
   grid-row: 1;
-  grid-column: 3 / 11;
-  text-align: center;
-  font-size: clamp(3rem, 5.5vw, 6rem);
   font-weight: 200;
   line-height: 1.1;
+  text-align: center;
+  grid-column: 3 / 11;
   letter-spacing: -0.03em;
   color: var(--color-navy);
+  font-size: clamp(3rem, 5.5vw, 6rem);
 }
 
 .about-defines__image {
   grid-row: 2;
-  grid-column: 1 / 13;
   height: 100vh;
   overflow: hidden;
-  position: relative;
+  grid-column: 1 / 13;
 }
 
 .about-defines__image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
   display: block;
+  object-fit: cover;
 }
 
 .about-defines__content {
   grid-row: 3;
-  grid-column: 3 / 11;
   display: flex;
+  grid-column: 3 / 11;
+  padding-left: 2rem;
+  padding-right: 2rem;
   flex-direction: column;
   gap: clamp(1.5rem, 3vh, 2rem);
+  border-left: 1px solid rgba(0, 0, 0, 0.32);
+  border-right: 1px solid rgba(0, 0, 0, 0.237);
 }
 
 .about-defines__content p {
-  text-align: center;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.6;
+  text-align: center;
   letter-spacing: -0.01em;
   color: var(--color-navy);
   font-size: clamp(1.1rem, 2vw, 2rem);
@@ -1813,8 +1817,8 @@ h6 {
 
 @media (max-width: 768px) {
   .about-defines__grid {
-    grid-template-rows: auto auto auto;
     row-gap: clamp(4rem, 8vh, 6rem);
+    grid-template-rows: auto auto auto;
   }
 
   .about-defines__headline {
@@ -1841,37 +1845,37 @@ h6 {
 }
 
 .about-technical {
-  padding: clamp(10rem, 20vh, 15rem) 0 0;
+  padding: 5rem 0 0;
+  position: relative;
   background-color: var(--color-cream);
   border-top: 1px solid rgba(0, 0, 0, 0.1);
-  position: relative;
 }
 
 .about-technical__sidebar {
-  position: absolute;
   top: 0;
   left: 5%;
   width: 1px;
-  height: 100%;
-  background-color: var(--color-navy);
   z-index: 1;
+  height: 100%;
+  position: absolute;
+  background-color: var(--color-navy);
 }
 
 .about-technical__grid {
   display: grid;
   gap: var(--grid-gap);
+  padding-bottom: 5rem;
   row-gap: clamp(4rem, 8vh, 6rem);
   grid-template-columns: repeat(var(--grid-columns), 1fr);
-  padding-bottom: clamp(8rem, 15vh, 12rem);
 }
 
 .about-technical__label {
-  grid-column: 2 / 12;
-  font-size: clamp(0.75rem, 1vw, 0.85rem);
   font-weight: 500;
+  grid-column: 2 / 12;
   letter-spacing: 0.15em;
-  text-transform: uppercase;
   color: var(--color-gold);
+  text-transform: uppercase;
+  font-size: clamp(0.75rem, 1vw, 0.85rem);
 }
 
 .about-technical__headline {
@@ -1888,39 +1892,39 @@ h6 {
 }
 
 .about-technical__intro p {
-  font-size: clamp(1.3rem, 2.2vw, 1.9rem);
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.6;
   letter-spacing: -0.01em;
   color: var(--color-navy);
+  font-size: clamp(1.3rem, 2.2vw, 1.9rem);
 }
 
 .about-technical__capabilities {
-  grid-column: 2 / 12;
   margin: 0;
   padding: 0;
-  list-style: none;
   display: grid;
+  list-style: none;
+  grid-column: 2 / 12;
   grid-template-columns: repeat(2, 1fr);
   gap: clamp(1.5rem, 3vh, 2rem) clamp(3rem, 5vw, 4rem);
 }
 
 .about-technical__capabilities li {
-  font-size: clamp(1rem, 1.5vw, 1.3rem);
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.6;
-  letter-spacing: 0.01em;
-  color: var(--color-navy);
-  padding-left: clamp(1.5rem, 2.5vw, 2rem);
   position: relative;
+  letter-spacing: -0.01em;
+  color: var(--color-navy);
+  font-size: clamp(1.3rem, 2.2vw, 1.9rem);
+  padding-left: clamp(1.5rem, 2.5vw, 2rem);
 }
 
 .about-technical__capabilities li::before {
-  content: "\2192";
-  position: absolute;
   left: 0;
-  color: var(--color-gold);
+  content: "→";
   font-weight: 500;
+  position: absolute;
+  color: var(--color-gold);
 }
 
 .about-technical__closing {
@@ -1928,25 +1932,24 @@ h6 {
 }
 
 .about-technical__closing p {
-  font-size: clamp(1.3rem, 2.2vw, 1.9rem);
   font-weight: 200;
   line-height: 1.4;
   letter-spacing: -0.01em;
   color: var(--color-navy);
+  font-size: clamp(1.3rem, 2.2vw, 1.9rem);
 }
 
 .about-technical__image {
-  overflow: hidden;
   height: 100vh;
   margin-left: 5%;
-  position: relative;
+  overflow: hidden;
 }
 
 .about-technical__image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
   display: block;
+  object-fit: cover;
 }
 
 @media (max-width: 768px) {
@@ -2218,7 +2221,6 @@ h6 {
   grid-row: 2;
   height: 100vh;
   overflow: hidden;
-  position: relative;
   grid-column: 6 / 13;
 }
 
@@ -2254,7 +2256,7 @@ h6 {
 
 .about-trust__intro p {
   margin-top: 5rem;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.5;
   letter-spacing: -0.01em;
   color: var(--color-navy);
@@ -2271,7 +2273,7 @@ h6 {
 }
 
 .about-trust__points li {
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.5;
   letter-spacing: -0.01em;
   color: var(--color-navy);
@@ -2286,7 +2288,7 @@ h6 {
 
 .about-trust__closing p {
   margin: 0;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.5;
   letter-spacing: -0.01em;
   color: var(--color-navy);
@@ -2359,7 +2361,7 @@ h6 {
 
 .about-philosophy__content p {
   margin: 0;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.6;
   text-align: center;
   letter-spacing: -0.01em;
@@ -2370,7 +2372,6 @@ h6 {
 .about-philosophy__image {
   height: 100vh;
   overflow: hidden;
-  position: relative;
   grid-column: 1 / 13;
 }
 
@@ -2402,6 +2403,7 @@ h6 {
     height: 70vh;
   }
 }
+
 .exhibitions-hero {
   display: flex;
   min-height: 100vh;
