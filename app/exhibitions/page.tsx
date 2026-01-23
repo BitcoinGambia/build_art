@@ -9,8 +9,8 @@ export const metadata: Metadata = {
 export default function ExhibitionsPage() {
   return (
     <main>
-      <ExhibitionsPageContent />
       <ExhibitionsAnimations />
+      <ExhibitionsPageContent />
     </main>
   );
 }

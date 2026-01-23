@@ -1,9 +1,8 @@
+import "./globals.css";
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
-import "./globals.css";
 import Footer from "components/layout/Footer";
 import Header from "components/layout/Header";
-import RouteTheme from "components/layout/RouteTheme";
 import SmoothScroll from "components/animations/SmoothScroll";
 
 export const metadata: Metadata = {
@@ -38,7 +37,6 @@ export default function RootLayout({ children }: RootLayoutProps) {
         />
       </head>
       <body>
-        <RouteTheme />
         <SmoothScroll />
         <Header />
         {children}

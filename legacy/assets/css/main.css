@@ -200,6 +200,10 @@ h6 {
   color: var(--color-navy);
 }
 
+.header--light:not(.header--scrolled) .header__nav a {
+  color: var(--color-navy);
+}
+
 .header__nav a:hover {
   color: var(--color-gold);
 }
