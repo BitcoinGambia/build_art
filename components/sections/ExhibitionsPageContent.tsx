@@ -190,7 +190,7 @@ export const exhibitionsContent: ServicePageContentProps = {
         description:
           "We understand your event, stand size, objectives, audience, technical needs, and timelines.",
         image: {
-          src: "/assets/images/image-43.jpg",
+          src: "/assets/images/image36.avif",
           alt: "Discovery & Briefing",
         },
       },
@@ -200,7 +200,7 @@ export const exhibitionsContent: ServicePageContentProps = {
         description:
           "Tailored concepts and 3D visuals developed with technical feasibility in mind.",
         image: {
-          src: "/assets/images/image-44.jpg",
+          src: "/assets/images/image30.png",
           alt: "Design & Visualization",
         },
       },
@@ -210,7 +210,7 @@ export const exhibitionsContent: ServicePageContentProps = {
         description:
           "Electrical layouts, load calculations, drawings, and venue submissions handled in parallel.",
         image: {
-          src: "/assets/images/image-45.jpg",
+          src: "/assets/images/image31.png",
           alt: "Technical Planning & Approvals",
         },
       },
@@ -220,7 +220,7 @@ export const exhibitionsContent: ServicePageContentProps = {
         description:
           "Fabrication, electrical preparation, and quality checks managed under strict timelines.",
         image: {
-          src: "/assets/images/image-46.jpg",
+          src: "/assets/images/image32.png",
           alt: "Production & Build",
         },
       },
@@ -230,7 +230,7 @@ export const exhibitionsContent: ServicePageContentProps = {
         description:
           "On-site build, technical setup, testing, and handover - delivered ready for show opening.",
         image: {
-          src: "/assets/images/image-47.jpg",
+          src: "/assets/images/image33.png",
           alt: "Installation & Delivery",
         },
       },
@@ -311,14 +311,14 @@ export const exhibitionsContent: ServicePageContentProps = {
             src: "/assets/images/image25.png",
             alt: "GITEX Technology Week Exhibition Stand",
           },
-          meta: "GITEX Technology Week - 100 sqm - Technology",
+          meta: "GITEX Technology Week · 100 sqm · Technology",
         },
         {
           image: {
             src: "/assets/images/image27.png",
             alt: "Arab Health Exhibition Stand",
           },
-          meta: "Arab Health - 150 sqm - Healthcare",
+          meta: "Arab Health · 150 sqm · Healthcare",
         },
       ],
       [
@@ -327,14 +327,14 @@ export const exhibitionsContent: ServicePageContentProps = {
             src: "/assets/images/image28.png",
             alt: "ADIPEC Exhibition Stand",
           },
-          meta: "ADIPEC - 200 sqm - Energy",
+          meta: "ADIPEC · 200 sqm · Energy",
         },
         {
           image: {
             src: "/assets/images/image30.png",
             alt: "Dubai Airshow Exhibition Stand",
           },
-          meta: "Dubai Airshow - 180 sqm - Aviation",
+          meta: "Dubai Airshow · 180 sqm · Aviation",
         },
       ],
     ],

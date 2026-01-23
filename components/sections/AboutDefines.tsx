@@ -13,7 +13,7 @@ export default function AboutDefines() {
 
           <div className="about-defines__image">
             <Image
-              src="/assets/images/image-20.jpg"
+              src="/assets/images/image20.webp"
               alt="BuildArt Global Integration"
               fill
               sizes="100vw"

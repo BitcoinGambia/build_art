@@ -6,7 +6,7 @@ const steps = [
     description:
       "We understand your objectives, constraints, timelines, and technical requirements.",
     image: {
-      src: "/assets/images/image-22.jpg",
+      src: "/assets/images/image22.png",
       alt: "Discovery & Alignment",
     },
   },
@@ -15,7 +15,7 @@ const steps = [
     description:
       "Concepts, layouts, and visualizations developed with technical feasibility in mind.",
     image: {
-      src: "/assets/images/image-26.jpg",
+      src: "/assets/images/image26.png",
       alt: "Design & Planning",
     },
   },
@@ -23,7 +23,7 @@ const steps = [
     title: "Technical Coordination & Approvals",
     description: "Electrical layouts, drawings, submissions, and compliance handled early.",
     image: {
-      src: "/assets/images/image-27.jpg",
+      src: "/assets/images/image27.png",
       alt: "Technical Coordination",
     },
   },
@@ -32,7 +32,7 @@ const steps = [
     description:
       "Production, installation, and quality control managed by experienced teams.",
     image: {
-      src: "/assets/images/image-29.jpg",
+      src: "/assets/images/image29.png",
       alt: "Build & Execution",
     },
   },
@@ -40,7 +40,7 @@ const steps = [
     title: "Delivery & Handover",
     description: "Projects delivered complete, tested, and ready for use.",
     image: {
-      src: "/assets/images/image-30.jpg",
+      src: "/assets/images/image30.png",
       alt: "Delivery & Handover",
     },
   },

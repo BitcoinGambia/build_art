@@ -66,7 +66,7 @@ export default function Services() {
           <div className="service-card" data-service="3">
             <div className="service-card__bg">
               <Image
-                src="/assets/images/image-27.jpg"
+                src="/assets/images/image27.png"
                 alt="Home Interiors"
                 fill
                 sizes="100vw"
