@@ -6,7 +6,7 @@ export default function AboutStory() {
       <div className="container">
         <div className="about-story__grid">
           <h2 className="about-story__headline">
-            Built on experience. Driven by execution.
+            Built on experience. <br />Driven by execution.
           </h2>
 
           <div className="about-story__text">
