@@ -235,10 +235,6 @@ export default function ServicePageContent({
                     sizes="100vw"
                   />
                 </div>
-
-                <p className="exhibition__image-description">
-                  {serviceIntro.imageDescription}
-                </p>
               </div>
 
               <div className="exhibition__wrapper-description">
@@ -332,7 +328,10 @@ export default function ServicePageContent({
 
                   <ul className="exhibition__content-items">
                     {scope.items.map((item) => (
-                      <li key={item.letter} className="exhibition__content-item">
+                      <li
+                        key={item.letter}
+                        className="exhibition__content-item"
+                      >
                         <span className="exhibition__description-number">
                           {item.letter}
                         </span>
@@ -375,7 +374,9 @@ export default function ServicePageContent({
                     />
                   </div>
                   <div className="exhibition__type-content">
-                    <span className="exhibition__type-number">{card.number}</span>
+                    <span className="exhibition__type-number">
+                      {card.number}
+                    </span>
                     <h2 className="exhibition__type-title">{card.title}</h2>
                     <p className="exhibition__type-description">
                       {card.description}
@@ -395,14 +396,14 @@ export default function ServicePageContent({
               <h1 className="exhibition__technical-headline">
                 {technical.headline}
               </h1>
-
-              <p className="exhibition__header-description">
-                {technical.description}
-              </p>
             </div>
 
             <div className="exhibition__technical-container">
               <div className="exhibition__technical-content">
+                <p className="exhibition__header-description">
+                  {technical.description}
+                </p>
+
                 <h2 className="exhibition__content-text">{technical.intro}</h2>
 
                 <ul className="exhibition__technical-items">
@@ -607,7 +608,10 @@ export default function ServicePageContent({
 
                 <div className="exhibition__faq-list">
                   {faq.items.map((item) => (
-                    <details key={item.question} className="exhibition__faq-item">
+                    <details
+                      key={item.question}
+                      className="exhibition__faq-item"
+                    >
                       <summary className="exhibition__faq-question">
                         <span>{item.question}</span>
                         <svg
