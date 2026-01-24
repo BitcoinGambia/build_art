@@ -8,7 +8,7 @@ export const exhibitionsContent: ServicePageContentProps = {
     description:
       "We design, build, and deliver high-impact exhibition stands for Tier-1 exhibitions across Dubai and Abu Dhabi - combining architecture, technology, and flawless execution under one turnkey solution. From concept and approvals to electrical, lighting, AV, and on-site delivery, we manage every detail so your brand performs with confidence on the show floor.",
     image: {
-      src: "/assets/images/image12.png",
+      src: "/assets/images/exhibition-5.jpg",
       alt: "Exhibition Stand Design",
     },
     primaryCta: {
@@ -26,7 +26,7 @@ export const exhibitionsContent: ServicePageContentProps = {
     description:
       "BuildArt Global specializes in custom exhibition stand design and build for companies exhibiting at high-profile trade shows, conferences, and industry events across the UAE.",
     image: {
-      src: "/assets/images/image1.png",
+      src: "/assets/images/exhibition-3.jpg",
       alt: "BuildArt Global Exhibition",
     },
     imageDescription:
@@ -42,7 +42,7 @@ export const exhibitionsContent: ServicePageContentProps = {
   who: {
     headline: "Who This Service Is For",
     image: {
-      src: "/assets/images/image9.png",
+      src: "/assets/images/exhibition-1.jpg",
       alt: "BuildArt Global Exhibition",
     },
     intro: "This service is designed for exhibitors who:",
@@ -57,13 +57,13 @@ export const exhibitionsContent: ServicePageContentProps = {
   scope: {
     headline: "Our Full Exhibition Scope",
     image: {
-      src: "/assets/images/image7.png",
+      src: "/assets/images/exhibition-6.jpg",
       alt: "BuildArt Global Exhibition",
     },
     imageText:
       "Exhibition stands today are not just structures - they are operational environments. That's why we deliver a fully integrated exhibition solution, covering both the physical build and the technical infrastructure required for modern exhibitions.",
     contentImage: {
-      src: "/assets/images/image8.png",
+      src: "/assets/images/exhibition-7.jpeg",
       alt: "BuildArt Global Exhibition",
     },
     listHeadline: "Our exhibition services include:",
@@ -125,7 +125,7 @@ export const exhibitionsContent: ServicePageContentProps = {
         description:
           "Bespoke designs aligned with your brand, audience, and objectives - engineered for buildability and compliance.",
         image: {
-          src: "/assets/images/image4.png",
+          src: "/assets/images/exhibition-4.jpg",
           alt: "Custom Exhibition Stands",
         },
       },
@@ -135,7 +135,7 @@ export const exhibitionsContent: ServicePageContentProps = {
         description:
           "Architectural presence for brands that require scale, visibility, and spatial impact.",
         image: {
-          src: "/assets/images/image2.png",
+          src: "/assets/images/exhibition-2.jpeg",
           alt: "Large-Scale & Double-Deck Stands",
         },
       },
@@ -300,7 +300,8 @@ export const exhibitionsContent: ServicePageContentProps = {
       src: "/assets/images/image21.png",
       alt: "Exhibition Experience",
     },
-    caption: "Decades of hands-on experience in UAE's leading exhibition venues.",
+    caption:
+      "Decades of hands-on experience in UAE's leading exhibition venues.",
   },
   portfolio: {
     headline: "Selected Exhibition Projects",
