@@ -2663,8 +2663,7 @@ h6 {
 }
 
 .exhibition__description-headline {
-  font-weight: 400;
-  text-transform: uppercase;
+  font-weight: 500;
   font-size: clamp(1.2rem, 2vw, 1.8rem);
 }
 
@@ -2735,8 +2734,7 @@ h6 {
 }
 
 .exhibition__container-headline {
-  font-weight: 400;
-  text-transform: uppercase;
+  font-weight: 500;
   font-size: clamp(1.3rem, 3vw, 2.5rem);
 }
 
@@ -2823,9 +2821,8 @@ h6 {
 
 .exhibition__content-headline {
   padding: 3rem 0;
-  font-weight: 400;
+  font-weight: 500;
   text-align: left;
-  text-transform: uppercase;
   font-size: clamp(1.3rem, 3vw, 2.5rem);
 }
 
@@ -3117,8 +3114,7 @@ h6 {
 }
 
 .exhibition__content-text {
-  font-weight: 400;
-  text-transform: uppercase;
+  font-weight: 500;
   font-size: clamp(1.3rem, 2vw, 1.7rem);
 }
 
@@ -3519,10 +3515,9 @@ h6 {
 }
 
 .exhibition__experience-subheadline {
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.2;
   color: var(--color-navy);
-  text-transform: uppercase;
   font-size: clamp(1.3rem, 3vw, 2rem);
 }
 
