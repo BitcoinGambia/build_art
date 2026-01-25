@@ -31,7 +31,7 @@ export const exhibitionsContent: ServicePageContentProps = {
     },
     imageDescription:
       "Our role is to translate your objectives into a strategic, visually strong, and technically reliable exhibition environment - delivered on time, fully compliant, and ready to perform.",
-    descriptionHeadline: "We work with brands that understand exhitions are:",
+    descriptionHeadline: "We work with brands that understand exhibitions are:",
     descriptionItems: [
       { number: "01", label: "High Visibility" },
       { number: "02", label: "High Pressure" },
