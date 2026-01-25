@@ -22,6 +22,7 @@ export default function Trust() {
               fill
               sizes="100vw"
             />
+            <span aria-hidden="true" className="trust__overlay" />
           </div>
 
           <div className="trust__image">
@@ -31,6 +32,7 @@ export default function Trust() {
               fill
               sizes="100vw"
             />
+            <span aria-hidden="true" className="trust__overlay" />
           </div>
 
           <div className="trust__image">
@@ -40,6 +42,7 @@ export default function Trust() {
               fill
               sizes="100vw"
             />
+            <span aria-hidden="true" className="trust__overlay" />
           </div>
         </div>
       </div>
