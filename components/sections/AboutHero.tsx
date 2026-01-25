@@ -21,7 +21,7 @@ export default function AboutHero() {
           </div>
           <div className="about-hero__image">
             <Image
-              src="/assets/images/image2.png"
+              src="/assets/images/ty.jpg"
               alt="BuildArt Global Work"
               fill
               sizes="100vw"

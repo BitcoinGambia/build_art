@@ -31,7 +31,7 @@ export default function AboutStory() {
 
           <div className="about-story__image">
             <Image
-              src="/assets/images/image5.png"
+              src="/assets/images/create-studio.jpeg"
               alt="BuildArt Global Work"
               fill
               sizes="100vw"

@@ -4,7 +4,7 @@ import ServicePageContent, {
 
 const homeProcessImages = [
   "/assets/images/image1.png",
-  "/assets/images/image2.png",
+  "/assets/images/home/image2.png",
   "/assets/images/image3.png",
   "/assets/images/image4.png",
   "/assets/images/image5.png",
@@ -78,7 +78,7 @@ const homeInteriorsContent: ServicePageContentProps = {
     imageText:
       "Design - Build - Electrical - Lighting. We provide a fully integrated home fit-out solution, including:",
     contentImage: {
-      src: "/assets/images/image32.png",
+      src: "/assets/images/home/image32.png",
       alt: "Residential Fit-Out Scope",
     },
     listHeadline: "Our residential services include:",
@@ -136,7 +136,7 @@ const homeInteriorsContent: ServicePageContentProps = {
       "Spaces feel warm, balanced, and easy to live in",
     ],
     image: {
-      src: "/assets/images/image34.png",
+      src: "/assets/images/home/image34.png",
       alt: "Residential Lighting & Electrical",
     },
     closingText:

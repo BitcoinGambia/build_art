@@ -6,7 +6,7 @@ const steps = [
     description:
       "We understand your objectives, constraints, timelines, and technical requirements.",
     image: {
-      src: "/assets/images/image22.png",
+      src: "/assets/images/home/image22.png",
       alt: "Discovery & Alignment",
     },
   },
