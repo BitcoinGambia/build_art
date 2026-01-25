@@ -10,7 +10,7 @@ import SocialProof from "components/sections/SocialProof";
 import Trust from "components/sections/Trust";
 
 export const metadata: Metadata = {
-  title: "Design & Build Excellence Across the UAE",
+  title: "BuildArt Global | Design & Build Excellence Across the UAE",
 };
 
 export default function HomePage() {

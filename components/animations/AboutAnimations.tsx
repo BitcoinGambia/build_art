@@ -63,48 +63,119 @@ export default function AboutAnimations() {
         },
       });
 
-      ScrollTrigger.create({
-        trigger: processHeadline,
-        start: "bottom top",
-        end: "bottom top-=1",
-        onEnter: () => {
-          processSection.classList.add("about-process--dark");
-        },
-        onLeaveBack: () => {
-          processSection.classList.remove("about-process--dark");
-        },
+      const processMm = gsap.matchMedia();
+
+      processMm.add("(min-width: 769px)", () => {
+        ScrollTrigger.create({
+          trigger: processHeadline,
+          start: "bottom top",
+          end: "bottom top-=1",
+          onEnter: () => {
+            processSection.classList.add("about-process--dark");
+          },
+          onLeaveBack: () => {
+            processSection.classList.remove("about-process--dark");
+          },
+        });
+
+        processCards.forEach((card, index) => {
+          const cardElement = card as HTMLElement;
+          const image = cardElement.querySelector<HTMLElement>(".about-process__image");
+          const step = cardElement.querySelector<HTMLElement>(".about-process__step");
+
+          if (!image || !step) return;
+
+          if (index < processCards.length - 1) {
+            ScrollTrigger.create({
+              trigger: cardElement,
+              start: "top top",
+              end: () => `+=${window.innerHeight}`,
+              pin: true,
+              pinSpacing: false,
+            });
+
+            gsap.to(image, {
+              "--pseudo-y": "-100%",
+              scrollTrigger: {
+                trigger: cardElement,
+                start: "top 85%",
+                toggleActions: "play none none reverse",
+              },
+              duration: 0.8,
+              ease: "power3.out",
+            });
+
+            gsap.from(step, {
+              opacity: 0,
+              y: 40,
+              scrollTrigger: {
+                trigger: cardElement,
+                start: "top 80%",
+                toggleActions: "play none none reverse",
+              },
+              duration: 0.8,
+              ease: "power3.out",
+            });
+
+            gsap.to(cardElement, {
+              scale: 0.7,
+              rotateZ: -15,
+              ease: "none",
+              scrollTrigger: {
+                trigger: processCards[index + 1] as HTMLElement,
+                start: "top bottom",
+                end: "top top",
+                scrub: true,
+              },
+            });
+          } else {
+            gsap.to(image, {
+              "--pseudo-y": "-100%",
+              scrollTrigger: {
+                trigger: cardElement,
+                start: "top 60%",
+                toggleActions: "play none none reverse",
+              },
+              duration: 1.2,
+              ease: "power3.inOut",
+            });
+
+            gsap.from(step, {
+              opacity: 0,
+              y: 40,
+              scrollTrigger: {
+                trigger: cardElement,
+                start: "top 80%",
+                toggleActions: "play none none reverse",
+              },
+              duration: 0.8,
+              ease: "power3.out",
+            });
+
+            ScrollTrigger.create({
+              trigger: cardElement,
+              start: "top center",
+              onEnter: () => {
+                processSection.classList.remove("about-process--dark");
+              },
+              onLeaveBack: () => {
+                processSection.classList.add("about-process--dark");
+              },
+            });
+          }
+        });
       });
 
-      processCards.forEach((card, index) => {
-        const cardElement = card as HTMLElement;
-        const image = cardElement.querySelector<HTMLElement>(".about-process__image");
-        const step = cardElement.querySelector<HTMLElement>(".about-process__step");
+      processMm.add("(max-width: 768px)", () => {
+        processCards.forEach((card) => {
+          const cardElement = card as HTMLElement;
+          const image = cardElement.querySelector<HTMLElement>(".about-process__image");
+          const step = cardElement.querySelector<HTMLElement>(".about-process__step");
 
-        if (!image || !step) return;
-
-        if (index < processCards.length - 1) {
-          ScrollTrigger.create({
-            trigger: cardElement,
-            start: "top top",
-            end: () => `+=${window.innerHeight}`,
-            pin: true,
-            pinSpacing: false,
-          });
+          if (!image || !step) return;
 
           gsap.to(image, {
             "--pseudo-y": "-100%",
-            scrollTrigger: {
-              trigger: cardElement,
-              start: "top 85%",
-              toggleActions: "play none none reverse",
-            },
-            duration: 0.8,
-            ease: "power3.out",
-          });
-
-          gsap.from(step, {
-            opacity: 0,
-            y: 40,
             scrollTrigger: {
               trigger: cardElement,
               start: "top 80%",
@@ -114,52 +185,18 @@ export default function AboutAnimations() {
             ease: "power3.out",
           });
 
-          gsap.to(cardElement, {
-            scale: 0.7,
-            rotateZ: -15,
-            ease: "none",
-            scrollTrigger: {
-              trigger: processCards[index + 1] as HTMLElement,
-              start: "top bottom",
-              end: "top top",
-              scrub: true,
-            },
-          });
-        } else {
-          gsap.to(image, {
-            "--pseudo-y": "-100%",
-            scrollTrigger: {
-              trigger: cardElement,
-              start: "top 60%",
-              toggleActions: "play none none reverse",
-            },
-            duration: 1.2,
-            ease: "power3.inOut",
-          });
-
           gsap.from(step, {
             opacity: 0,
-            y: 40,
+            y: 30,
             scrollTrigger: {
               trigger: cardElement,
               start: "top 80%",
               toggleActions: "play none none reverse",
             },
-            duration: 0.8,
+            duration: 0.6,
             ease: "power3.out",
           });
-
-          ScrollTrigger.create({
-            trigger: cardElement,
-            start: "top center",
-            onEnter: () => {
-              processSection.classList.remove("about-process--dark");
-            },
-            onLeaveBack: () => {
-              processSection.classList.add("about-process--dark");
-            },
-          });
-        }
+        });
       });
 
       if (processCta) {
