@@ -30,7 +30,7 @@ const defaultSteps: ProcessStep[] = [
     title: "Discovery & Vision",
     description: "We start by understanding your goals and context.",
     image: {
-      src: "/assets/images/image3.png",
+      src: "/assets/images/image15.jpg",
       alt: "Discovery & Vision",
     },
   },
@@ -38,7 +38,7 @@ const defaultSteps: ProcessStep[] = [
     title: "Design & Strategy",
     description: "Tailored concepts backed by 3D visualization (where relevant).",
     image: {
-      src: "/assets/images/image10.png",
+      src: "/assets/images/office-3.png",
       alt: "Design & Strategy",
     },
   },
@@ -46,7 +46,7 @@ const defaultSteps: ProcessStep[] = [
     title: "Execution & Delivery",
     description: "On-time build with precision and quality assurance.",
     image: {
-      src: "/assets/images/image15.jpg",
+      src: "/assets/images/image (8).jpg",
       alt: "Execution & Delivery",
     },
   },

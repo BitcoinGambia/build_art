@@ -14,7 +14,7 @@ export default function Services() {
           <div className="service-card" data-service="1">
             <div className="service-card__bg">
               <Image
-                src="/assets/images/exhibtion-1.png"
+                src="/assets/images/salone-del-mobile-2025.jpeg"
                 alt="Exhibition Stands"
                 fill
                 sizes="100vw"
@@ -40,7 +40,7 @@ export default function Services() {
           <div className="service-card" data-service="2">
             <div className="service-card__bg">
               <Image
-                src="/assets/images/office-2.png"
+                src="/assets/images/exhibition-structure-02.jpg"
                 alt="Office Fit-Out"
                 fill
                 sizes="100vw"
@@ -66,7 +66,7 @@ export default function Services() {
           <div className="service-card" data-service="3">
             <div className="service-card__bg">
               <Image
-                src="/assets/images/image27.png"
+                src="/assets/images/ephemeral-habitat-valencia-1.jpg"
                 alt="Home Interiors"
                 fill
                 sizes="100vw"
