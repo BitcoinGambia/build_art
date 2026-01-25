@@ -6,7 +6,7 @@ export default function Hero() {
     <section className="hero">
       <div className="hero__background">
         <Image
-          src="/assets/images/hero-slider-4.png"
+          src="/assets/images/home/hero-slider-4.png"
           alt="BuildArt Global Projects"
           className="hero__bg-slide active"
           fill
@@ -14,21 +14,21 @@ export default function Hero() {
           priority
         />
         <Image
-          src="/assets/images/hero-slider-2.png"
+          src="/assets/images/home/hero-slider-2.png"
           alt="BuildArt Global Projects"
           className="hero__bg-slide"
           fill
           sizes="100vw"
         />
         <Image
-          src="/assets/images/hero-slider-3.png"
+          src="/assets/images/home/hero-slider-3.png"
           alt="BuildArt Global Projects"
           className="hero__bg-slide"
           fill
           sizes="100vw"
         />
         <Image
-          src="/assets/images/hero-slider-1.png"
+          src="/assets/images/home/hero-slider-1.png"
           alt="BuildArt Global Projects"
           className="hero__bg-slide"
           fill

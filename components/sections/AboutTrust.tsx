@@ -29,7 +29,7 @@ export default function AboutTrust() {
 
           <div className="about-trust__image">
             <Image
-              src="/assets/images/image6.png"
+              src="/assets/images/exhibition-6.jpg"
               alt="BuildArt Global Delivery"
               fill
               sizes="100vw"

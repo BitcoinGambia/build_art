@@ -26,7 +26,7 @@ export const exhibitionsContent: ServicePageContentProps = {
     description:
       "BuildArt Global specializes in custom exhibition stand design and build for companies exhibiting at high-profile trade shows, conferences, and industry events across the UAE.",
     image: {
-      src: "/assets/images/exhibition-3.jpg",
+      src: "/assets/images/home/exhibition-3.jpg",
       alt: "BuildArt Global Exhibition",
     },
     imageDescription:
@@ -220,7 +220,7 @@ export const exhibitionsContent: ServicePageContentProps = {
         description:
           "Fabrication, electrical preparation, and quality checks managed under strict timelines.",
         image: {
-          src: "/assets/images/image32.png",
+          src: "/assets/images/home/image32.png",
           alt: "Production & Build",
         },
       },
@@ -230,7 +230,7 @@ export const exhibitionsContent: ServicePageContentProps = {
         description:
           "On-site build, technical setup, testing, and handover - delivered ready for show opening.",
         image: {
-          src: "/assets/images/image33.png",
+          src: "/assets/images/home/image33.png",
           alt: "Installation & Delivery",
         },
       },

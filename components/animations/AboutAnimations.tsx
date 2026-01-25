@@ -42,12 +42,24 @@ export default function AboutAnimations() {
         ease: "power3.out",
       });
 
-      const processSection = document.querySelector(".about-process");
-      const processHeadline = document.querySelector(".about-process__headline");
-      const processCards = gsap.utils.toArray<HTMLElement>(".about-process__item");
-      const processCta = document.querySelector(".about-process__cta");
+      const processSection =
+        document.querySelector(".process") ??
+        document.querySelector(".about-process");
 
-      if (!processSection || !processHeadline || processCards.length === 0) {
+      if (!processSection) {
+        return;
+      }
+
+      const baseClass = processSection.classList.contains("process")
+        ? "process"
+        : "about-process";
+      const processHeadline = processSection.querySelector(
+        `.${baseClass}__headline`
+      );
+      const processCards = gsap.utils.toArray<HTMLElement>(`.${baseClass}__item`);
+      const processCta = processSection.querySelector(`.${baseClass}__cta`);
+
+      if (!processHeadline || processCards.length === 0) {
         return;
       }
 
@@ -68,17 +80,21 @@ export default function AboutAnimations() {
         start: "bottom top",
         end: "bottom top-=1",
         onEnter: () => {
-          processSection.classList.add("about-process--dark");
+          processSection.classList.add(`${baseClass}--dark`);
         },
         onLeaveBack: () => {
-          processSection.classList.remove("about-process--dark");
+          processSection.classList.remove(`${baseClass}--dark`);
         },
       });
 
       processCards.forEach((card, index) => {
         const cardElement = card as HTMLElement;
-        const image = cardElement.querySelector<HTMLElement>(".about-process__image");
-        const step = cardElement.querySelector<HTMLElement>(".about-process__step");
+        const image = cardElement.querySelector<HTMLElement>(
+          `.${baseClass}__image`
+        );
+        const step = cardElement.querySelector<HTMLElement>(
+          `.${baseClass}__step`
+        );
 
         if (!image || !step) return;
 
@@ -153,10 +169,10 @@ export default function AboutAnimations() {
             trigger: cardElement,
             start: "top center",
             onEnter: () => {
-              processSection.classList.remove("about-process--dark");
+              processSection.classList.remove(`${baseClass}--dark`);
             },
             onLeaveBack: () => {
-              processSection.classList.add("about-process--dark");
+              processSection.classList.add(`${baseClass}--dark`);
             },
           });
         }

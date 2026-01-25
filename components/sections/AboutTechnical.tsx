@@ -40,7 +40,8 @@ export default function AboutTechnical() {
 
       <div className="about-technical__image">
         <Image
-          src="/assets/images/image23.avif"
+          src="/assets/images/image19.webp
+"
           alt="Technical Capability"
           fill
           sizes="100vw"

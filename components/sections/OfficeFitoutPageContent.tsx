@@ -4,7 +4,7 @@ import ServicePageContent, {
 
 const officeProcessImages = [
   "/assets/images/image21.png",
-  "/assets/images/image22.png",
+  "/assets/images/home/image22.png",
   "/assets/images/image23.avif",
   "/assets/images/image24.avif",
   "/assets/images/image26.png",
@@ -12,7 +12,7 @@ const officeProcessImages = [
 
 const officePortfolioImages = [
   ["/assets/images/image29.png", "/assets/images/image30.png"],
-  ["/assets/images/image31.png", "/assets/images/image32.png"],
+  ["/assets/images/image31.png", "/assets/images/home/image32.png"],
 ];
 
 const officeFitoutContent: ServicePageContentProps = {
@@ -21,7 +21,7 @@ const officeFitoutContent: ServicePageContentProps = {
     description:
       "We design and deliver functional, brand-aligned office environments that support productivity, collaboration, and long-term business growth - built with technical precision and full turnkey execution. From planning and approvals to electrical systems, lighting, and delivery, we manage the entire process so your business keeps moving forward with minimal disruption.",
     image: {
-      src: "/assets/images/office-1.png",
+      src: "/assets/images/home/office-1.png",
       alt: "Office Renovation & Commercial Fit-Out",
     },
     primaryCta: {
@@ -57,7 +57,7 @@ const officeFitoutContent: ServicePageContentProps = {
   who: {
     headline: "Who This Service Is For",
     image: {
-      src: "/assets/images/office-3.png",
+      src: "/assets/images/home/office-3.png",
       alt: "Commercial Office Fit-Out",
     },
     intro: "This service is ideal for:",
@@ -78,7 +78,7 @@ const officeFitoutContent: ServicePageContentProps = {
     imageText:
       "Design - Build - Electrical - Technology. We provide a fully integrated office renovation solution, including:",
     contentImage: {
-      src: "/assets/images/image15.jpg",
+      src: "/assets/images/home/image15.jpg",
       alt: "Commercial Fit-Out Scope",
     },
     listHeadline: "Our fit-out services include:",
@@ -141,7 +141,7 @@ const officeFitoutContent: ServicePageContentProps = {
       "Electrical systems meet UAE regulations",
     ],
     image: {
-      src: "/assets/images/image20.webp",
+      src: "/assets/images/home/image20.webp",
       alt: "Office Technical Integration",
     },
     closingText:
@@ -307,7 +307,7 @@ const officeFitoutContent: ServicePageContentProps = {
       },
     ],
     image: {
-      src: "/assets/images/image33.png",
+      src: "/assets/images/home/image33.png",
       alt: "Commercial Fit-Out",
     },
   },
@@ -324,7 +324,7 @@ const officeFitoutContent: ServicePageContentProps = {
       label: "Contact Our Commercial Team",
     },
     image: {
-      src: "/assets/images/image34.png",
+      src: "/assets/images/home/image34.png",
       alt: "BuildArt Global Project",
     },
   },
