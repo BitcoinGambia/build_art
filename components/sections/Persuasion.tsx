@@ -18,7 +18,7 @@ export default function Persuasion() {
         <div className="persuasion__grid">
           <div className="persuasion__image persuasion__image--hero">
             <Image
-              src="/assets/images/image31.png"
+              src="/assets/images/image2.png"
               alt="BuildArt Global Project"
               fill
               sizes="100vw"
@@ -27,7 +27,7 @@ export default function Persuasion() {
 
           <div className="persuasion__image">
             <Image
-              src="/assets/images/image34.png"
+              src="/assets/images/instagram-08.jpeg"
               alt="BuildArt Global Project"
               fill
               sizes="100vw"
@@ -36,7 +36,16 @@ export default function Persuasion() {
 
           <div className="persuasion__image">
             <Image
-              src="/assets/images/image21.png"
+              src="/assets/images/salone-del-mobile-2025.jpeg"
+              alt="BuildArt Global Project"
+              fill 
+              sizes="100vw"
+            />
+          </div>
+
+          <div className="persuasion__image">
+            <Image
+              src="/assets/images/image22.png"
               alt="BuildArt Global Project"
               fill
               sizes="100vw"
@@ -45,16 +54,7 @@ export default function Persuasion() {
 
           <div className="persuasion__image">
             <Image
-              src="/assets/images/image16.jpg"
-              alt="BuildArt Global Project"
-              fill
-              sizes="100vw"
-            />
-          </div>
-
-          <div className="persuasion__image">
-            <Image
-              src="/assets/images/image27.png"
+              src="/assets/images/moroso-showroom.jpeg"
               alt="BuildArt Global Project"
               fill
               sizes="100vw"
