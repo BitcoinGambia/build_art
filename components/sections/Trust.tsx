@@ -17,6 +17,16 @@ export default function Trust() {
 
           <div className="trust__image">
             <Image
+              src="/assets/images/image32.png"
+              alt="BuildArt Global Project"
+              fill
+              sizes="100vw"
+            />
+            <span aria-hidden="true" className="trust__overlay" />
+          </div>
+
+          <div className="trust__image">
+            <Image
               src="/assets/images/office-1.png"
               alt="BuildArt Global Project"
               fill
@@ -28,16 +38,6 @@ export default function Trust() {
           <div className="trust__image">
             <Image
               src="/assets/images/image34.png"
-              alt="BuildArt Global Project"
-              fill
-              sizes="100vw"
-            />
-            <span aria-hidden="true" className="trust__overlay" />
-          </div>
-
-          <div className="trust__image">
-            <Image
-              src="/assets/images/image21.png"
               alt="BuildArt Global Project"
               fill
               sizes="100vw"

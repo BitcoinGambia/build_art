@@ -14,7 +14,7 @@ export default function SocialProof() {
 
           <div className="social-proof__image social-proof__image--large">
             <Image
-              src="/assets/images/image19.webp"
+              src="/assets/images/img00001.jpeg"
               alt="Exhibition Stand Project"
               fill
               sizes="100vw"
@@ -23,7 +23,7 @@ export default function SocialProof() {
 
           <div className="social-proof__image social-proof__image--small">
             <Image
-              src="/assets/images/image16.jpg"
+              src="/assets/images/studio-05.jpeg"
               alt="Office Fit-Out Project"
               fill
               sizes="100vw"
@@ -39,7 +39,7 @@ export default function SocialProof() {
 
           <div className="social-proof__image social-proof__image--small">
             <Image
-              src="/assets/images/image27.png"
+              src="/assets/images/studio-06.jpeg"
               alt="Residential Interior"
               fill
               sizes="100vw"
@@ -48,7 +48,7 @@ export default function SocialProof() {
 
           <div className="social-proof__image social-proof__image--small">
             <Image
-              src="/assets/images/image21.png"
+              src="/assets/images/img00004.jpeg"
               alt="Commercial Space"
               fill
               sizes="100vw"
@@ -57,7 +57,7 @@ export default function SocialProof() {
 
           <div className="social-proof__image social-proof__image--small">
             <Image
-              src="/assets/images/image28.png"
+              src="/assets/images/img00002.jpeg"
               alt="Event Space"
               fill
               sizes="100vw"
@@ -73,7 +73,7 @@ export default function SocialProof() {
 
           <div className="social-proof__image social-proof__image--large">
             <Image
-              src="/assets/images/image23.avif"
+              src="/assets/images/exhibition-3.jpg"
               alt="Exhibition Environment"
               fill
               sizes="100vw"
