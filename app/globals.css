@@ -641,6 +641,15 @@ h6 {
   position: relative;
 }
 
+.trust__overlay {
+  inset: 0;
+  opacity: 0.18;
+  position: absolute;
+  pointer-events: none;
+  background: var(--color-cream);
+  z-index: 1;
+}
+
 .trust__image:nth-child(2) {
   grid-column: 1 / 7;
 }
@@ -658,6 +667,7 @@ h6 {
   height: 100%;
   display: block;
   object-fit: cover;
+  z-index: 0;
 }
 
 @media (max-width: 768px) {
